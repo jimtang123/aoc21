@@ -23,6 +23,7 @@ namespace Aoc21
             return (parts[0], int.Parse(parts[1]));
         }
 
+        // 1636725
         static string PartA()
         {
             var f = Utils.Utils.OpenInput("2");
@@ -45,6 +46,7 @@ namespace Aoc21
             return (x * y).ToString();
         }
 
+        // 1872757425
         static string PartB()
         {
             var f = Utils.Utils.OpenInput("2");

@@ -17,15 +17,15 @@ namespace Aoc21
             };
         }
 
+        // 1715
         static string PartA()
         {
             var f = Utils.Utils.OpenInput("1");
             int cnt = 0;
             int last = int.Parse(f[0]);
-            int cur;
             for (int i = 1; i < f.Count(); i++)
             {
-                cur = int.Parse(f[i]);
+                var cur = int.Parse(f[i]);
                 if (cur > last) {
                     cnt++;
                 }
@@ -34,24 +34,25 @@ namespace Aoc21
             return cnt.ToString();
         }
 
+        // 1739
         static string PartB()
         {
-            var f = Utils.Utils.OpenInput("1");
+            var f = Utils.Utils.OpenInput("1")
+                .Select((n) => int.Parse(n))
+                .ToArray();
             int cnt = 0;
-            var window = new int[3];
-            int cur;
-            window[0] = int.Parse(f[0]);
-            window[1] = int.Parse(f[1]);
-            window[2] = int.Parse(f[2]);
+            var window = f
+                .Take(3)
+                .ToArray();
             for (int i = 3; i < f.Count(); i++)
             {
-                cur = int.Parse(f[i]);
-                if (cur > window[0]) {
+                if (f[i] > window[0]) {
                     cnt++;
                 }
-                window[0] = window[1];
-                window[1] = window[2];
-                window[2] = cur;
+                window = window
+                    .Skip(1)
+                    .Append(f[i])
+                    .ToArray();
             }
             return cnt.ToString();
         }

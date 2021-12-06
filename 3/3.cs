@@ -17,6 +17,7 @@ namespace Aoc21
             };
         }
 
+        // 2583164
         static string PartA()
         {
             var f = Utils.Utils.OpenInput("3");
@@ -43,6 +44,7 @@ namespace Aoc21
             return (gamma * epsilon).ToString();
         }
 
+        // 2784375
         static string PartB()
         {
             var f = Utils.Utils.OpenInput("3");
