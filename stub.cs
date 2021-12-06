@@ -7,7 +7,7 @@ namespace Aoc21
 {
     public static class DayDAY_NUMBER
     {
-        public static string Run(string whichPart)
+        public static string? Run(string whichPart)
         {
             return whichPart switch
             {
@@ -19,12 +19,12 @@ namespace Aoc21
 
         static string PartA()
         {
-            
+            var f = Utils.Utils.OpenInput("DAY_NUMBER");
         }
 
         static string PartB()
         {
-            
+            var f = Utils.Utils.OpenInput("DAY_NUMBER");
         }
     }
 }

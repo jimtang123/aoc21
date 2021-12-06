@@ -10,15 +10,17 @@ namespace runner
     {
         static void Main(string[] args)
         {
+            if (args.Length != 2)
+            {
+                throw new ArgumentException($"Invalid number of arguments ({args.Length})");
+            }
             if (!int.TryParse(args[0], out var _))
             {
-                Console.WriteLine($"Could not parse day value ({args[0]})");
-                return;
+                throw new ArgumentException($"Could not parse day value ({args[0]})");
             }
             if (args[1] != "a" && args[1] != "b")
             {
-                Console.WriteLine($"Could not parse problem value ({args[1]})");
-                return;
+                throw new ArgumentException($"Could not parse problem part ({args[1]})");
             }
             
             var result = Assembly
