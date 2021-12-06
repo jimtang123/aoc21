@@ -2,6 +2,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\1\1.csproj" />
+    <ProjectReference Include="..\2\2.csproj" />
+    <ProjectReference Include="..\3\3.csproj" />
+    <ProjectReference Include="..\4\4.csproj" />
+    <ProjectReference Include="..\5\5.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
