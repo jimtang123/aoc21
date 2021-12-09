@@ -9,6 +9,7 @@
     <ProjectReference Include="..\6\6.csproj" />
     <ProjectReference Include="..\7\7.csproj" />
     <ProjectReference Include="..\8\8.csproj" />
+    <ProjectReference Include="..\9\9.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
