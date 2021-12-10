@@ -10,6 +10,7 @@
     <ProjectReference Include="..\7\7.csproj" />
     <ProjectReference Include="..\8\8.csproj" />
     <ProjectReference Include="..\9\9.csproj" />
+    <ProjectReference Include="..\10\10.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
