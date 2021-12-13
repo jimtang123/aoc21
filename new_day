@@ -1,5 +1,10 @@
 #!/bin/sh
 
+[ -z "$1" ] && echo "Usage: ./new_day day_number" && exit 1
+[ -d "$1" ] && echo "Day $1 already exists." && exit 1
+[ "$1" -eq "$1" ] 2>/dev/null && echo "Creating day $1." || (echo "$1: not a number" && exit 1)
+
+touch "runner/in/$1"
 dotnet new classlib -o "$1"
 rm "$1/Class1.cs"
 cp stub.cs "$1/$1.cs"
