@@ -17,6 +17,7 @@
     <ProjectReference Include="..\14\14.csproj" />
     <ProjectReference Include="..\15\15.csproj" />
     <ProjectReference Include="..\16\16.csproj" />
+    <ProjectReference Include="..\17\17.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
