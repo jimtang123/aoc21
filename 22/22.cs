@@ -97,6 +97,18 @@ public static class Day22
             return (op, parts[0], parts[1], parts[2]);
         });
 
+        var on = new HashSet<((int from, int to) x, (int from, int to) y, (int from, int to) z)>();
+        foreach (var ins in instructions)
+        {
+            if (ins.op)
+            {
+                
+            } else
+            {
+
+            }
+        }
+
         return "";
     }
 }
