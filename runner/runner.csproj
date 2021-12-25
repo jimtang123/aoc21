@@ -25,6 +25,7 @@
     <ProjectReference Include="..\22\22.csproj" />
     <ProjectReference Include="..\23\23.csproj" />
     <ProjectReference Include="..\24\24.csproj" />
+    <ProjectReference Include="..\25\25.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
